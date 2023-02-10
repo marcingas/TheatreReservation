@@ -41,7 +41,7 @@ public class Theatre {
     //for testing
     public void getSeats() {
         for (Seat seat : seats) {
-            System.out.println(seat.getSeatNumber);
+            System.out.println(seat.getSeatNumber());
         }
     }
     private class Seat {
@@ -68,6 +68,10 @@ public class Theatre {
             }else {
                 return  false;
             }
+        }
+
+        public String getSeatNumber() {
+            return seatNumber;
         }
     }
 }
